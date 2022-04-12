@@ -69,3 +69,4 @@ for (let i = 0; i <= card_info.length; i++) {
 
 document.querySelector('.container').insertAdjacentHTML('beforeend', card_markup);
 
+}
