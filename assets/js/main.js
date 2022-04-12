@@ -66,4 +66,6 @@ for (let i = 0; i <= card_info.length; i++) {
     <p>Piace a <span id="like_counter ${post.id}" class="likes">${post.likes}</span>persone</p>
 </div>
 </div>`
-}
+
+document.querySelector('.container').insertAdjacentHTML('beforeend', card_markup);
+
