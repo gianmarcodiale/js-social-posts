@@ -46,4 +46,24 @@ for (let i = 0; i <= card_info.length; i++) {
     const post = card_info[i];
     let likes = post.likes;
     let id = post.id;
+
+    const card_markup = `<div class="cards">
+<div class="profile">
+    <img id="profile_img" src="${post.author_photo}" alt="">
+    <div>
+        <h3>${post.author}</h3>
+        <p>${post.date}</p>
+    </div>
+</div>
+<div class="mid">
+    <p>${post.caption}</p>
+    <div class="post_image">
+        <img src="${post.image}" alt="">
+    </div>
+</div>
+<div class="like">
+    <button class="add_like" id='like_btn ${post.id}'><i class="fa-solid fa-thumbs-up"></i>Mi piace</button>
+    <p>Piace a <span id="like_counter ${post.id}" class="likes">${post.likes}</span>persone</p>
+</div>
+</div>`
 }
